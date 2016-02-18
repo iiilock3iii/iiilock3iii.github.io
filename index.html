@@ -1,0 +1,123 @@
+<!-- Copyright (C) Collin Welker 2015-->
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Collin Welker">
+	<meta name="author" content="Collin Welker">
+
+	<!--jquery-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	
+	<!--bootstrap-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--angular-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js" /></script>
+	<script src="https://code.angularjs.org/1.4.7/angular-resource.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+	<!--lovesac scripts-->
+	<script src="app.js"></script>
+	<script src="/controllers/lovesacControllers/lovesacHomeCtrl.js"></script>
+	<script src="/controllers/lovesacControllers/oneSeries5Ctrl.js"></script>
+	<script src="/controllers/lovesacControllers/oneSeries6Ctrl.js"></script>
+	<script src="/controllers/lovesacControllers/twoSeries5Ctrl.js"></script>
+	<script src="/controllers/lovesacControllers/twoSeries6Ctrl.js"></script>
+	<script src="/controllers/lovesacControllers/threeSeries5Ctrl.js"></script>
+	<script src="/controllers/lovesacControllers/threeSeries6Ctrl.js"></script>
+
+	<script src="/directives/dirPagination.js"></script>
+	<script src="/factories/customFactories.js"></script>
+
+	<script src="/customFilters/lovesacFilters/oneBasesFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/oneSidesFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/oneWidthFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/oneDepthFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/twoBasesFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/twoSidesFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/twoWidthFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/twoDepthFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/threeBasesFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/threeSidesFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/threeWidthFilter.js"></script>
+	<script src="/customFilters/lovesacFilters/threeDepthFilter.js"></script>
+	
+	<!--scripts-->
+	<script src="controllers/homeCtrl.js"></script>
+	<script src="controllers/404Ctrl.js"></script>
+	<script src="controllers/aboutCtrl.js"></script>
+	<script src="controllers/resumeCtrl.js"></script>
+	<script src="controllers/contactCtrl.js"></script>
+	
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<!-- Navigation -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#/">
+							<img class="navbar-brand" src="images/logo.jpg" style="width:65px;height:65px;"/>
+						</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#/about">About</a>
+							</li>
+							<li>
+								<a href="#/resume">Resume</a>
+							</li>
+							<li>
+								<a href="#/contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div ng-view autoscroll="true"></div>
+
+	<div class="container">
+		<!-- Start of SimpleHitCounter Code -->
+		<div class="row">
+			<div class="col-md-12">
+				<div align="center">
+					<a href="http://www.simplehitcounter.com" target="_blank">
+						<img src="http://simplehitcounter.com/hit.php?uid=1989961&f=65535&b=0" border="0" height="18" width="83" alt="web counter">
+					</a>
+					<br>
+					<a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;">
+            web counter
+        </a>
+				</div>
+			</div>
+		</div>
+		<!-- End of SimpleHitCounter Code -->
+	</div>
+
+</body>
+
+</html>
