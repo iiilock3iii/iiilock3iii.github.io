@@ -7,7 +7,7 @@ app.factory('sactionalsFactory', function ($http) {
 	function getData(callback) {
 		$http({
 			method: 'GET',
-			url: '/json/sactionals.json',
+			url: 'json/sactionals.json',
 			cache: true
 		}).success(callback);
 	}
@@ -22,7 +22,7 @@ app.factory('sactionalsFactorySeries5twoCombinations', function ($http) {
 	function getData(callback) {
 		$http({
 			method: 'GET',
-			url: '/json/series5twoCombinations.json',
+			url: 'json/series5twoCombinations.json',
 			cache: true
 		}).success(callback);
 	}
@@ -37,7 +37,7 @@ app.factory('sactionalsFactorySeries6twoCombinations', function ($http) {
 	function getData(callback) {
 		$http({
 			method: 'GET',
-			url: '/json/series6twoCombinations.json',
+			url: 'json/series6twoCombinations.json',
 			cache: true
 		}).success(callback);
 	}
@@ -52,7 +52,7 @@ app.factory('sactionalsFactorySeries5threeCombinations', function ($http) {
 	function getData(callback) {
 		$http({
 			method: 'GET',
-			url: '/json/series5threeCombinations.json',
+			url: 'json/series5threeCombinations.json',
 			cache: true
 		}).success(callback);
 	}
@@ -67,7 +67,7 @@ app.factory('sactionalsFactorySeries6threeCombinations', function ($http) {
 	function getData(callback) {
 		$http({
 			method: 'GET',
-			url: '/json/series6threeCombinations.json',
+			url: 'json/series6threeCombinations.json',
 			cache: true
 		}).success(callback);
 	}

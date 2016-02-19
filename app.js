@@ -48,51 +48,51 @@ var app = angular.module('app', ['ngRoute', 'angularUtils.directives.dirPaginati
 app.config(function ($routeProvider) {
 	$routeProvider.
 	when('/', {
-		templateUrl: '/views/home.html',
+		templateUrl: 'views/home.html',
 		controller: 'homeCtrl'
 	}).
 	when('/lovesac', {
-		templateUrl: '/views/lovesacViews/lovesacHome.html',
+		templateUrl: 'views/lovesacViews/lovesacHome.html',
 		controller: 'lovesacHomeCtrl'
 	}).
 	when('/series5', {
-		templateUrl: '/views/lovesacViews/oneSactionalList.html',
+		templateUrl: 'views/lovesacViews/oneSactionalList.html',
 		controller: 'oneSeries5Ctrl'
 	}).
 	when('/series6', {
-		templateUrl: '/views/lovesacViews/oneSactionalList.html',
+		templateUrl: 'views/lovesacViews/oneSactionalList.html',
 		controller: 'oneSeries6Ctrl'
 	}).
 	when('/series5/twoCouches', {
-		templateUrl: '/views/lovesacViews/twoSactionalList.html',
+		templateUrl: 'views/lovesacViews/twoSactionalList.html',
 		controller: 'twoSeries5Ctrl'
 	}).
 	when('/series6/twoCouches', {
-		templateUrl: '/views/lovesacViews/twoSactionalList.html',
+		templateUrl: 'views/lovesacViews/twoSactionalList.html',
 		controller: 'twoSeries6Ctrl'
 	}).
 	when('/series5/threeCouches', {
-		templateUrl: '/views/lovesacViews/threeSactionalList.html',
+		templateUrl: 'views/lovesacViews/threeSactionalList.html',
 		controller: 'threeSeries5Ctrl'
 	}).
 	when('/series6/threeCouches', {
-		templateUrl: '/views/lovesacViews/threeSactionalList.html',
+		templateUrl: 'views/lovesacViews/threeSactionalList.html',
 		controller: 'threeSeries6Ctrl'
 	}).
 	when('/about', {
-		templateUrl: '/views/about.html',
+		templateUrl: 'views/about.html',
 		controller: 'aboutCtrl'
 	}).
 	when('/resume', {
-		templateUrl: '/views/resume.html',
+		templateUrl: 'views/resume.html',
 		controller: 'resumeCtrl'
 	}).
 	when('/contact', {
-		templateUrl: '/views/contact.html',
+		templateUrl: 'views/contact.html',
 		controller: 'contactCtrl'
 	}).
 	when('/:urlVariable', {
-		templateUrl: '/views/404.html',
+		templateUrl: 'views/404.html',
 		controller: '404Ctrl'
 	}).
 	otherwise({
