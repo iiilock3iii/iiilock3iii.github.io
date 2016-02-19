@@ -1,0 +1,169 @@
+<!-- Copyright (C) 2015 Collin Welker-->
+<!--Notarized 12/06/2015 by Mark Hendry-->
+
+<head>
+	<title>Lovesac</title>
+	<link href="/css/lovesac.css" rel="stylesheet" />
+</head>
+
+<div class="container text-center">
+	<div class="row">
+		<div class="col-sm-12">
+			<!--<a type="button" class="btn btn-default btn-sm backButton pull-left" href="#/">
+				<span class="glyphicon glyphicon-arrow-left"></span> Back
+			</a>-->
+			<h2>
+			Series {{ sactionalSeries }} Sactional Positions
+			</h2>
+			
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			Order By:
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="btn-group btn-group-sm">
+				<button type="button" class="btn btn-primary" ng-click="order('Name')">
+					<span class="sortorder" ng-show="sortField === 'Name'" ng-class="{reverse:reverse}" /> Name
+				</button>
+				<button type="button" class="btn btn-primary" ng-click="order('Bases')">
+					<span class="sortorder" ng-show="sortField === 'Bases'" ng-class="{reverse:reverse}" /> Bases
+				</button>
+				<button type="button" class="btn btn-primary" ng-click="order('Sides')">
+					<span class="sortorder" ng-show="sortField === 'Sides'" ng-class="{reverse:reverse}" /> Sides
+				</button>
+				<button type="button" class="btn btn-primary" ng-click="order('Width')">
+					<span class="sortorder" ng-show="sortField === 'Width'" ng-class="{reverse:reverse}" /> Width
+				</button>
+				<button type="button" class="btn btn-primary" ng-click="order('Depth')">
+					<span class="sortorder" ng-show="sortField === 'Depth'" ng-class="{reverse:reverse}" /> Depth
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="row checkboxRow">
+		<div class="col-sm-12">
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="oneCouchCheckbox" ng-disabled="true">1 Couch
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="twoCouchesCheckbox" ng-change="checkedTwoCouchesCheckbox()">2 Couches
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="threeCouchesCheckbox" ng-change="checkedThreeCouchesCheckbox()">3 Couches
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="useAllPiecesCheckbox" ng-change="checkedUseAllPiecesCheckbox()"> Use All Pieces
+			</label>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-2 form-group"></div>
+		<div class="col-xs-4 form-group">
+			<label for="basesInput">Bases:</label>
+			<select class="form-control" ng-model="basesInput" id="basesInput">
+				<option value=0>0</option>
+				<option value=1>1</option>
+				<option value=2>2</option>
+				<option value=3>3</option>
+				<option value=4>4</option>
+				<option value=5>5</option>
+				<option value=6>6</option>
+				<option value=7>7</option>
+				<option value=8>8</option>
+				<option value=9>9</option>
+				<option value=10>10</option>
+				<option value=11>11</option>
+				<option value=12>12</option>
+			</select>
+		</div>
+		<div class="col-xs-4 form-group">
+			<label for="sidesInput">Sides:</label>
+			<select class="form-control" ng-model="sidesInput" id="sidesInput">
+				<option value=0>0</option>
+				<option value=1>1</option>
+				<option value=2>2</option>
+				<option value=3>3</option>
+				<option value=4>4</option>
+				<option value=5>5</option>
+				<option value=6>6</option>
+				<option value=7>7</option>
+				<option value=8>8</option>
+				<option value=9>9</option>
+				<option value=10>10</option>
+			</select>
+		</div>
+		<div class="col-xs-2 form-group"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<label for="widthInput">Width:</label>
+			<input type="number" id="widthInput" ng-model="widthInput" placeholder="62" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<label for="depthInput">Depth:</label>
+			<input type="number" id="depthInput" ng-model="depthInput" placeholder="31" />
+		</div>
+	</div>
+
+	<!--	http://jsfiddle.net/livibetter/HV9HM/-->
+	<div id="sticky-anchor"></div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="sticky">
+				<dir-pagination-controls boundary-links="true" template-url="/views/lovesacViews/dirPagination.tpl.html">
+				</dir-pagination-controls>
+			</div>
+		</div>
+	</div>
+	<div class="row pull-right">
+		<div class="col-sm-12">
+			<a type="button" id="topButton" class="btn btn-primary" onclick="$('html, body').animate({scrollTop:0},800)">
+				<span class="glyphicon glyphicon-arrow-up"></span>
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-12">
+			<div class="panel-group text-left">
+
+				<!--http://www.michaelbromley.co.uk/blog/108/paginate-almost-anything-in-angularjs
+ORDER MATTERS HERE, itemsPerPage has to be at the end or it all blows up-->
+				<div class="panel panel-primary" dir-paginate="sactional in sactionals | oneWidthFilter:widthInput | oneDepthFilter:depthInput | oneBasesFilter:basesInput:useAllPiecesCheckbox | oneSidesFilter:sidesInput:useAllPiecesCheckbox | orderBy:sortField:reverse | itemsPerPage:10">
+
+					<div class="panel-heading">
+						{{ sactional.Name }}
+					</div>
+					<div class="panel-body text-center">
+						Bases: {{ sactional.Bases }} &nbsp;&nbsp; Sides: {{ sactional.Sides }}
+						<br/>
+						<img class="img-responsive center-block" ng-src="{{ sactional.Image }}" alt="{{ sactional.Name }}">
+						<!--http://stackoverflow.com/questions/26243057/understanding-a-localhost-image-loading-error-in-angular-js-->
+						<br/> Width:{{ sactional.Width }}" &nbsp;&nbsp; Depth: {{ sactional.Depth }}"
+					</div>
+				</div>
+			</div>
+			<div class="noSactionals">
+				No Sactionals to display
+			</div>
+		</div>
+	</div>
+	<div class="row noSactionals">
+		<div class="col-sm-12">
+			<button class="btn btn-primary" ng-click="reloadPage()">Clear All</button>
+		</div>
+	</div>
+</div>

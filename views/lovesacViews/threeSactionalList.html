@@ -1,0 +1,221 @@
+<!--Copyright (C) 2015 Collin Welker-->
+<!--Notarized 12/06/2015 by Mark Hendry-->
+
+<head>
+	<title>Lovesac</title>
+	<link href="/css/lovesac.css" rel="stylesheet" />
+</head>
+	
+<div class="container text-center">
+
+	<div class="row">
+		<div class="col-sm-12">
+			<!--<a type="button" class="btn btn-default btn-sm backButton pull-left" href="#/">
+				<span class="glyphicon glyphicon-arrow-left"></span> Back
+			</a>-->
+			<h2 class="text-center">
+			Three Couches Series {{ sactionalSeries }} Sactional Configurations
+			</h2>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			Order By:
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="btn-group btn-group-sm">
+				<button type="button" class="btn btn-primary" ng-click="order('id')">
+					<span class="sortorder" ng-show="sortField === 'id'" ng-class="{reverse:reverse}"></span> Configuration Number
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="row checkboxRow">
+		<div class="col-sm-12">
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="oneCouchCheckbox" ng-change="checkedOneCouchCheckbox()">1 Couch
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="twoCouchesCheckbox" ng-change="checkedTwoCouchesCheckbox()">2 Couches
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="threeCouchesCheckbox" ng-disabled="true">3 Couches
+			</label>
+		</div>
+	</div>
+	<div class="row checkboxRow">
+		<div class="col-sm-12">
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="useAllPiecesCheckbox" ng-change="checkedUseAllPiecesCheckbox()"> Use All Pieces
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" ng-model="noDuplicatesCheckbox" ng-change="checkedNoDuplicatesCheckbox()"> No Dupes
+			</label>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-2 form-group"></div>
+		<div class="col-xs-4 form-group">
+			<label for="basesInput">Bases:</label>
+			<select class="form-control" ng-model="basesInput" id="basesInput">
+				<option value=0>0</option>
+				<option value=1>1</option>
+				<option value=2>2</option>
+				<option value=3>3</option>
+				<option value=4>4</option>
+				<option value=5>5</option>
+				<option value=6>6</option>
+				<option value=7>7</option>
+				<option value=8>8</option>
+				<option value=9>9</option>
+				<option value=10>10</option>
+				<option value=11>11</option>
+				<option value=12>12</option>
+				<option value=13>13</option>
+				<option value=14>14</option>
+				<option value=15>15</option>
+				<option value=16>16</option>
+				<option value=17>17</option>
+				<option value=18>18</option>
+				<option value=19>19</option>
+				<option value=20>20</option>
+				<option value=21>21</option>
+				<option value=22>22</option>
+				<option value=23>23</option>
+				<option value=24>24</option>
+				<option value=25>25</option>
+				<option value=26>26</option>
+				<option value=27>27</option>
+				<option value=28>28</option>
+				<option value=29>29</option>
+				<option value=30>30</option>
+				<option value=31>31</option>
+				<option value=32>32</option>
+				<option value=33>33</option>
+				<option value=35>34</option>
+				<option value=35>35</option>
+				<option value=36>36</option>
+			</select>
+		</div>
+		<div class="col-xs-4 form-group">
+			<label for="sidesInput">Sides:</label>
+			<select class="form-control" ng-model="sidesInput" id="sidesInput">
+				<option value=0>0</option>
+				<option value=1>1</option>
+				<option value=2>2</option>
+				<option value=3>3</option>
+				<option value=4>4</option>
+				<option value=5>5</option>
+				<option value=6>6</option>
+				<option value=7>7</option>
+				<option value=8>8</option>
+				<option value=9>9</option>
+				<option value=10>10</option>
+				<option value=11>11</option>
+				<option value=12>12</option>
+				<option value=13>13</option>
+				<option value=14>14</option>
+				<option value=15>15</option>
+				<option value=16>16</option>
+				<option value=17>17</option>
+				<option value=18>18</option>
+				<option value=19>19</option>
+				<option value=20>20</option>
+				<option value=21>21</option>
+				<option value=22>22</option>
+				<option value=23>23</option>
+				<option value=24>24</option>
+				<option value=25>25</option>
+				<option value=26>26</option>
+				<option value=27>27</option>
+				<option value=28>28</option>
+				<option value=29>29</option>
+				<option value=30>30</option>
+				<option value=31>31</option>
+				<option value=32>32</option>
+				<option value=33>33</option>
+				<option value=35>34</option>
+				<option value=35>35</option>
+				<option value=36>36</option>
+			</select>
+		</div>
+		<div class="col-xs-2 form-group"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<label for="widthInput">Combined Width:</label>
+			<input type="number" id="widthInput" ng-model="widthInput" placeholder="62" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<label for="depthInput">Combined Depth:</label>
+			<input type="number" id="depthInput" ng-model="depthInput" placeholder="31" />
+		</div>
+	</div>
+
+	<!--	http://jsfiddle.net/livibetter/HV9HM/-->
+	<div id="sticky-anchor"></div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="sticky">
+				<dir-pagination-controls boundary-links="true" template-url="/views/lovesacViews/dirPagination.tpl.html">
+				</dir-pagination-controls>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 text-right">
+			<a type="button" id="topButton" class="btn btn-primary" onclick="$('html, body').animate({scrollTop:0},800)">
+				<span class="glyphicon glyphicon-arrow-up"></span>
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel-group text-left">
+				<div class="panel panel-primary" dir-paginate="sactional in sactionals | threeWidthFilter:widthInput | threeDepthFilter:depthInput | threeBasesFilter:basesInput:useAllPiecesCheckbox:noDuplicatesCheckbox | threeSidesFilter:sidesInput:useAllPiecesCheckbox:noDuplicatesCheckbox | orderBy:sortField:reverse | itemsPerPage:10">
+
+					<div class="panel-heading">
+						{{ sactional.Config }}
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-4 col-sm-4" ng-repeat="couch in sactional.couches track by $index">
+								<div class="panel panel-default text-center">
+									<div class="panel-heading">
+										{{ couch.Name }}
+									</div>
+									<div class="panel-body">
+										Bases: {{ couch.Bases }} &nbsp;&nbsp; Sides : {{ couch.Sides }}
+										<br/>
+										<img class="img-responsive center-block" ng-src="{{ couch.Image }}" alt="{{ couch.Name }}">
+										</br>
+										Width : {{ couch.Width }}" &nbsp;&nbsp; Depth : {{ couch.Depth }}"
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="noSactionals">
+				No Sactionals to display
+			</div>
+		</div>
+	</div>
+	<div class="row noSactionals">
+		<div class="col-sm-12">
+			<button class="btn btn-primary" ng-click="reloadPage()">Clear All</button>
+		</div>
+	</div>
+</div>
