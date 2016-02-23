@@ -1,6 +1,3 @@
-# collinwelker
-collinwelker.com
-
 Collin Welker
 ======
 
