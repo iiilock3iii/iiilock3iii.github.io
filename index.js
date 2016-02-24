@@ -1,6 +1,11 @@
-var http = require('http')
-
-http.createServer(function (request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"})
-  response.end("Hello World\n")
-}).listen(process.env.PORT)
+var app = require('http');
+ 
+app.set('port', (process.env.PORT || 5000));
+  
+app.get('/', function(request, response) {
+  response.render('index');
+});
+  
+app.listen(app.get('port'), function() {
+ console.log('Node app is running on port', app.get('port'));
+});
