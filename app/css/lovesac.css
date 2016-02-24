@@ -1,0 +1,58 @@
+/*Copyright (C) 2015 Collin Welker*/
+/*Notarized 12/06/2015 by Mark Hendry*/
+
+body {
+	padding-top: 70px;
+/*	margin: 0 auto;*/
+}
+
+footer {
+	margin: 50px 0;
+}
+
+.backButton {
+	margin-top: 25px;
+}
+
+.checkboxRow {
+	margin-top: 7.5px;
+	margin-bottom: 5px;
+}
+
+.sortorder:after {
+/*	content: '\25bc';*/
+	content: '\25b2';
+}
+.sortorder.reverse:after {
+/*	content: '\25b2';*/
+	content: '\25bc';
+}
+
+#sticky {
+/*	background-color: #333;*/
+}
+/*http://jsfiddle.net/livibetter/HV9HM/*/
+#sticky.stick {
+	background-color: #a3a9ae;
+    border-radius: 4ex;
+    position: fixed;
+    top: 50px;
+    z-index: 10;
+}
+
+#topButton {
+	display: none;
+	bottom: 20px;
+}
+
+#topButton.stickBottom {
+	display: block;
+	border-radius: 2ex;
+	cursor: pointer;
+    position: fixed;
+    z-index: 10;
+}
+
+.noSactionals {
+	display: none;
+}
