@@ -1,4 +1,4 @@
-app.controller('homeCtrl', function ($scope, $http) {
+app.controller('mainCtrl', function ($scope, $http) {
 	
 //	Copyright (C) 2015 Collin Welker
 	
