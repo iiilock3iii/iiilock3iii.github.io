@@ -48,8 +48,8 @@ var app = angular.module('app', ['ngRoute', 'angularUtils.directives.dirPaginati
 app.config(function ($routeProvider) {
 	$routeProvider.
 	when('/', {
-		templateUrl: 'views/home.html',
-		controller: 'homeCtrl'
+		templateUrl: 'views/main.html',
+		controller: 'mainCtrl'
 	}).
 	when('/lovesac', {
 		templateUrl: 'views/lovesacViews/lovesacHome.html',
