@@ -1,6 +1,0 @@
-{
-  "name": "collinwelker",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/iiilock3iii/collinwelker",
-  "keywords": ["node", "express", "static"]
-}
