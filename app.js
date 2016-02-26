@@ -79,18 +79,18 @@ app.config(function ($routeProvider) {
 		templateUrl: 'views/lovesacViews/threeSactionalList.html',
 		controller: 'threeSeries6Ctrl'
 	}).
-	when('/about', {
-		templateUrl: 'views/about.html',
-		controller: 'aboutCtrl'
-	}).
+	//when('/about', {
+	//	templateUrl: 'views/about.html',
+	//	controller: 'aboutCtrl'
+	//}).
 	when('/resume', {
 		templateUrl: 'views/resume.html',
 		controller: 'resumeCtrl'
 	}).
-	when('/contact', {
-		templateUrl: 'views/contact.html',
-		controller: 'contactCtrl'
-	}).
+	//when('/contact', {
+	//	templateUrl: 'views/contact.html',
+	//	controller: 'contactCtrl'
+	//}).
 	when('/:urlVariable', {
 		templateUrl: 'views/404.html',
 		controller: '404Ctrl'
