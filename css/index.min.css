@@ -1,0 +1,119 @@
+/*body{background-color:#eee}.mainBody{margin-top:150px;padding-right:15px;padding-left:15px}h1{font-size:48px;font-weight:300;margin:0 0 20px 0}p{font-size:21px;font-weight:200;margin-bottom:20px;margin-top:20px}body{padding-top:70px}footer{margin:50px 0}.backButton{margin-top:25px}.checkboxRow{margin-top:7.5px;margin-bottom:5px}.sortorder:after{content:'25b2'}.sortorder.reverse:after{content:'25bc'}#sticky{}#sticky.stick{background-color:#a3a9ae;border-radius:4ex;position:fixed;top:50px;z-index:10}#topButton{display:none;bottom:20px}#topButton.stickBottom{display:block;border-radius:2ex;cursor:pointer;position:fixed;z-index:10}.noSactionals{display:none} !*! * Start Bootstrap - One Page Wonder HTML Template (http://startbootstrap.com) * Code licensed under the Apache License v2.0. * For details, see http://www.apache.org/licenses/LICENSE-2.0. *! body{margin-top:50px}.header-image{display:block;width:100%;text-align:center;background:url('http://placehold.it/1900x500') no-repeat center center scroll;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover}.headline{padding:120px 0}.headline h1{font-size:130px;background:#fff;background:rgba(255,255,255,0.9);word-wrap:break-word}.headline h2{font-size:77px;background:#fff;background:rgba(255,255,255,0.9)}footer{margin:50px 0}@media(max-width:1200px){.headline h1{font-size:140px}.headline h2{font-size:63px}}@media(max-width:991px){.headline h1{font-size:105px}.headline h2{font-size:50px}}@media(max-width:768px){.container{margin:0 15px}}@media(max-width:668px){.headline h1{font-size:70px}.headline h2{font-size:32px}.featurette-divider{margin:30px 0}}@media(max-width:640px){.headline{padding:75px 0 25px 0}.headline h1{font-size:60px}.headline h2{font-size:30px}}body{padding-top:55px}*/
+
+body {
+  background-color: #eee
+  padding-top: 70px
+}
+.mainBody {
+  margin-top: 150px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0
+}
+p {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  margin-top: 20px
+}
+footer {
+  margin: 50px 0
+}
+.backButton {
+  margin-top: 25px
+}
+.checkboxRow {
+  margin-top: 7.5px;
+  margin-bottom: 5px
+}
+.sortorder:after {
+  content: '25b2'
+}
+.sortorder.reverse:after {
+  content: '25bc'
+}
+#sticky {}#sticky.stick {
+            background-color: #a3a9ae;
+            border-radius: 4ex;
+            position: fixed;
+            top: 50px;
+            z-index: 10
+          }
+#topButton {
+  display: none;
+  bottom: 20px
+}
+#topButton.stickBottom {
+  display: block;
+  border-radius: 2ex;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10
+}
+.noSactionals {
+  display: none
+}
+.header-image {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover
+}
+.headline {
+  padding: 120px 0
+}
+.headline h1 {
+  font-size: 130px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  word-wrap: break-word
+}
+.headline h2 {
+  font-size: 77px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9)
+}
+@media(max-width:1200px){.headline h1 {
+  font-size: 140px
+}
+  .headline h2 {
+    font-size: 63px
+  }
+}
+@media(max-width:991px){.headline h1 {
+  font-size: 105px
+}
+  .headline h2 {
+    font-size: 50px
+  }
+}
+@media(max-width:768px){.container{margin:0 15px
+}
+}
+@media(max-width:668px){.headline h1 {
+  font-size:70px
+}
+  .headline h2 {
+    font-size:32px
+  }
+  .featurette-divider {
+    margin:30px 0
+  }
+}
+@media(max-width:640px){.headline{padding:75px 0 25px 0
+}
+  .headline h1 {
+    font-size:60px
+  }
+  .headline h2 {
+    font-size:30px
+  }
+}

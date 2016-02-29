@@ -15,9 +15,7 @@ app.factory('sactionalsFactory', function ($http) {
 	return {
 		list: getData
 	};
-});
-
-app.factory('sactionalsFactorySeries5twoCombinations', function ($http) {
+}).factory('sactionalsFactorySeries5twoCombinations', function ($http) {
 
 	function getData(callback) {
 		$http({
@@ -30,9 +28,7 @@ app.factory('sactionalsFactorySeries5twoCombinations', function ($http) {
 	return {
 		list: getData
 	};
-});
-
-app.factory('sactionalsFactorySeries6twoCombinations', function ($http) {
+}).factory('sactionalsFactorySeries6twoCombinations', function ($http) {
 
 	function getData(callback) {
 		$http({
@@ -45,9 +41,7 @@ app.factory('sactionalsFactorySeries6twoCombinations', function ($http) {
 	return {
 		list: getData
 	};
-});
-
-app.factory('sactionalsFactorySeries5threeCombinations', function ($http) {
+}).factory('sactionalsFactorySeries5threeCombinations', function ($http) {
 
 	function getData(callback) {
 		$http({
@@ -60,9 +54,7 @@ app.factory('sactionalsFactorySeries5threeCombinations', function ($http) {
 	return {
 		list: getData
 	};
-});
-
-app.factory('sactionalsFactorySeries6threeCombinations', function ($http) {
+}).factory('sactionalsFactorySeries6threeCombinations', function ($http) {
 
 	function getData(callback) {
 		$http({
