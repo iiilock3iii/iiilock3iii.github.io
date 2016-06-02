@@ -87,10 +87,10 @@ app.config(function ($routeProvider) {
 		templateUrl: 'views/resume.html',
 		controller: 'resumeCtrl'
 	}).
-	//when('/contact', {
-	//	templateUrl: 'views/contact.html',
-	//	controller: 'contactCtrl'
-	//}).
+	when('/contact', {
+		templateUrl: 'views/contact.html',
+		controller: 'contactCtrl'
+	}).
 	when('/:urlVariable', {
 		templateUrl: 'views/404.html',
 		controller: '404Ctrl'
