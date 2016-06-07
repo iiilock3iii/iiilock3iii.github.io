@@ -91,6 +91,10 @@ app.config(function ($routeProvider) {
 		templateUrl: 'views/contact.html',
 		controller: 'contactCtrl'
 	}).
+    when('/mahJong', {
+		templateUrl: 'views/mahJong.html',
+		controller: 'mahJongCtrl'
+	}).
 	when('/:urlVariable', {
 		templateUrl: 'views/404.html',
 		controller: '404Ctrl'

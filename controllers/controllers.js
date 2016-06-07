@@ -1,4 +1,12 @@
-app.controller('404Ctrl', function ($scope, $http, $routeParams, $location) {
+app.controller('mahJongCtrl', function ($scope, $http, $routeParams, $location) {
+
+//	Copyright (C) 2015 Collin Welker
+
+//    console.log($routeParams);
+  $scope.baseUrl = $location.absUrl();
+  $scope.myVariable = $location.path();//$routeParams.urlVariable;
+
+}).controller('404Ctrl', function ($scope, $http, $routeParams, $location) {
 
 //	Copyright (C) 2015 Collin Welker
 

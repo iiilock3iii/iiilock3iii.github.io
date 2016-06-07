@@ -1,0 +1,22 @@
+body {
+	background-color: #eee;
+}
+
+.mainBody {
+	margin-top: 75px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.hitCounter {
+    padding-top: 25px;
+}
+
+.downloadLinks {
+    padding-top: 15px;
+}
+
+.mahJongImg {
+    padding-top: 25px;
+    margin: 0 auto;
+}
