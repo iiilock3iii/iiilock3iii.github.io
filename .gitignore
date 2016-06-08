@@ -1,1 +1,5 @@
 workspace.xml
+node_modules
+.env
+Dockerfile
+docker-compose.yml
