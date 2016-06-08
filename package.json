@@ -1,11 +1,13 @@
 {
-  "name"         : "node-todo",
+  "name"         : "collinwelker.com",
   "version"      : "0.0.0",
-  "description"  : "Simple todo application.",
-  "main"         : "server.js",
-  "author"       : "Scotch",
+  "description"  : "Simple portfolio application.",
+  "main"         : "index.js",
+  "author"       : "Collin Welker",
   "dependencies" : {
-    "express"    : "~4.7.2",
-    "morgan"     : "~1.2.2"
-    }
+    "express"    : "~4.7.2"
+    },
+  "engines": {
+      "node": "0.12.7"
+  }
 }
