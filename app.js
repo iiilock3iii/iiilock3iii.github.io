@@ -41,6 +41,12 @@ $(document).ready(function () {
 		sticky_relocate();
 		//if page is scrolled down past paginator and the window is resized, recall sticky-relocate function to keep paginator centered
 	});
+    
+    $('.nav a').on('click', function(){
+        $('.btn-navbar').click(); //bootstrap 2.x
+        $('.navbar-toggle').click() //bootstrap 3.x by Richard
+    });
+    
 });
 
 var app = angular.module('app', ['ngRoute', 'angularUtils.directives.dirPagination' ]);
