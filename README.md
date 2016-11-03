@@ -2,7 +2,7 @@ Collin Welker
 ======
 
 # About
-This is the source for [http://www.collinwelker.com/#/](http://www.collinwelker.com/#/)
+This is the source for [http://collinwelker.com/#/](http://collinwelker.com/#/)
 
 View live github demo at [http://iiilock3iii.github.io/#/](http://iiilock3iii.github.io/#/)
 
