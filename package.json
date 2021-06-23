@@ -1,13 +1,13 @@
 {
-  "name"         : "www.collinwelker.com",
-  "version"      : "0.0.0",
-  "description"  : "Simple portfolio application.",
-  "main"         : "index.js",
-  "author"       : "Collin Welker",
-  "dependencies" : {
-    "express"    : "~4.7.2"
-    },
+  "name": "www.collinwelker.com",
+  "version": "0.0.0",
+  "description": "Simple portfolio application.",
+  "main": "index.js",
+  "author": "Collin Welker",
+  "dependencies": {
+    "express": "~4.7.2"
+  },
   "engines": {
-      "node": "0.12.7"
+    "node": "0.12.7"
   }
 }
